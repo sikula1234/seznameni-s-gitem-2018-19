@@ -4,8 +4,11 @@ public class Pyramida {
 		int vyska = Integer.parseInt(args[0]);
 		
 		for (int y = 0; y < vyska; y++) {
-			for (int x = 0; x < y * 2 + 1; x++) {
-				System.out.printf("X");
+			for (int a = 0; a < vyska - y - 1; a++) {
+				System.out.printf(" ");
+			}
+			for (int b = 0; b < y * 2 + 1; b++) {
+				System.out.printf("Z");
 			}
 			System.out.println();
 		}
